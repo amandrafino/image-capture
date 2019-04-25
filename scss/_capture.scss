@@ -1,0 +1,87 @@
+#camera {
+  padding: 30px;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background: #a2a2a2;
+  border: 10px solid #333;
+  border-radius: 5px;
+
+  .booth {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    & .myplayer {
+      outline: none;
+      width: 200px;
+      height: 160px;
+    }
+
+    & .btn {
+      display: block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      width: 180px;
+      border-radius: 3px;
+      font-size: 1.25rem;
+      background: $true-blue;
+      outline: none;
+      border: none;
+      border: 1px solid lighten(darkblue, 30%);
+      color: #f4f4f4;
+      cursor: pointer;
+    }
+
+    & button:hover {
+      background: darken($true-blue, 5%);
+    }
+
+    & .mycanvas {
+      width: 200px;
+      height: 160px;
+    }
+  }
+}
+
+/* Media Queries */
+@include medium {
+  .wrapper {
+    .booth {
+      & .myplayer {
+        width: 400px;
+        height: 320px;
+      }
+
+      & .btn {
+        width: 350px;
+      }
+
+      & .mycanvas {
+        width: 400px;
+        height: 320px;
+      }
+    }
+
+    @include large {
+      .booth {
+        & .myplayer {
+          width: 600px;
+          height: 480px;
+        }
+
+        & .btn {
+          width: 350px;
+        }
+
+        & .mycanvas {
+          width: 600px;
+          height: 480px;
+        }
+      }
+    }
+  }
+}

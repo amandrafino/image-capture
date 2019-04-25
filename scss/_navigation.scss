@@ -1,0 +1,41 @@
+/* Variables */
+$bg-color-lt: #f4f4f4;
+$true-blue: royalblue;
+
+/* Navigation */
+.main-nav {
+  background: $true-blue;
+  text-align: center;
+  list-style: none;
+
+  & a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: darken(#fff, 10%);
+  }
+
+  & a:hover {
+    background: darken($true-blue, 2%);
+  }
+
+  & li a:last-of-type {
+    border-bottom: none;
+  }
+}
+
+@include medium {
+  .main-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@include large {
+  .main-nav {
+    justify-content: flex-end;
+    flex-flow: row wrap;
+  }
+}

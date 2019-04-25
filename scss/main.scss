@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "_mixins";
+@import "_navigation";
+@import "_capture";
+
+/* Variables */
+$bg-color-lt: #f4f4f4;
+$true-blue: royalblue;
+
+/* globals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
