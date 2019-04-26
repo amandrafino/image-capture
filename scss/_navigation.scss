@@ -17,6 +17,10 @@ $true-blue: royalblue;
     color: darken(#fff, 10%);
   }
 
+  & a.current {
+    color: gold;
+  }
+
   & a:hover {
     background: darken($true-blue, 2%);
   }
