@@ -16,6 +16,10 @@
   color: #e6e6e6;
 }
 
+.main-nav a.current {
+  color: gold;
+}
+
 .main-nav a:hover {
   background: #3862e0;
 }
@@ -151,5 +155,9 @@ h2 {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: green;
 }
 /*# sourceMappingURL=main.css.map */
